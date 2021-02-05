@@ -23,6 +23,7 @@ namespace WebApplication1
             int a = 5;
             int a = 5;
             int a = 5;
+            int b;
         }
 
         public IConfiguration Configuration { get; }
