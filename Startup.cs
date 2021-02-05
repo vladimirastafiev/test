@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 namespace WebApplication1
 {
     /* Hello world! */
+    /*Privet*/
     public class Startup
     {
         public Startup(IConfiguration configuration)
