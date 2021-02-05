@@ -15,7 +15,7 @@ namespace WebApplication1
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-            int i = 3 * 4;
+            int i = 3 * 4 * 5;
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
