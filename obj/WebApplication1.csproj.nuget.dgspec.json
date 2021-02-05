@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Владимир\\Desktop\\Программирование\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\Alex\\source\\repos\\test\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Владимир\\Desktop\\Программирование\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\Alex\\source\\repos\\test\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Владимир\\Desktop\\Программирование\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\test\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\Владимир\\Desktop\\Программирование\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\Владимир\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Владимир\\Desktop\\Программирование\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\source\\repos\\test\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\source\\repos\\test\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Владимир\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
