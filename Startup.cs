@@ -18,7 +18,7 @@ namespace WebApplication1
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            int a = 5;
+            int a = 5 * 77;
             int a = 5;
             int a = 5;
             int a = 5;
