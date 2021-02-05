@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Лабораторная работа 1</title>
+</head>
+<body>
+    <style>
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+    <script>
+        const e = 0.00001;
+        function factorial(n) {
+            let result = 1;
+            for (let i = 1; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+        }
+        function inFunction(x, n) {
+            return Math.pow(-1, n) * Math.pow(2 * x, 2 * n) / factorial(2 * n);
+        }
+        function sum(x) {
+            let n = 1;
+            let previousElem = inFunction(x, n);
+            let s = previousElem;
+            for (n = 2; ; n++) {
+                let currentElem = inFunction(x, n);
+                if (Math.abs(currentElem) <= e) {
+                    return s;
+                }
+                else {
+                    s += currentElem;
+                    previousElem = currentElem;
+                }
+            }
+        }
+        function inSum(min, max, step) {
+            let result = 0;
+            for (let i = min; i <= max; i += step) {
+                result += step * sum(i);
+            }
+            return result;
+        }
+        function integral(min, max, step) {
+            let previousSum = inSum(min, max, step);
+            while (1) {
+                step /= 2;
+                let currentSum = inSum(min, max, step);
+                if (Math.abs(currentSum - previousSum) <= e) {
+                    return currentSum;
+                }
+                else {
+                    previousSum = currentSum;
+                }
+            }
+        }
+        function button_click() {
+            let table = document.getElementsByTagName("table")[0];
+            let caption = table.createCaption();
+            caption.innerText = "Вывод результатов: ";
+            table.border = 3;
+            while (table.tBodies[0].rows[0])
+                table.tBodies[0].deleteRow(0);
+            let newRow = table.insertRow(-1), newCell = newRow.insertCell(-1);
+            newCell.innerHTML = "x";
+            newCell = newRow.insertCell(-1);
+            newCell.innerHTML = "y";
+            let min = Number(document.getElementsByTagName("input")[0].value);
+            let max = Number(document.getElementsByTagName("input")[1].value);
+            let step = Number(document.getElementsByTagName("input")[2].value);
+            for (let i = min; i <= max; i += step) {
+                newRow = table.insertRow(-1);
+                newCell = newRow.insertCell(-1);
+                newCell.innerHTML = i.toString();
+                newCell = newRow.insertCell(-1);
+                newCell.innerHTML = sum(i).toFixed(5);
+            }
+            document.getElementById("integral").innerText = "Определённый интеграл равен " + integral(min, max, step).toFixed(5);
+        }
+    </script>
+    <form>
+        <label>Минимальное значение аргумента <input type='number' /></label>
+        <label>Максимальное значение аргумента <input type='number' /></label>
+        <label>Шаг аргумента <input type='number' /></label>
+        <input type="button" value="Рассчитать" onclick="button_click()"/>
+    </form>
+    <p><table>
+        <tbody></tbody>
+    </table>
+    <p id="integral"></p>
+</body>
+</html>

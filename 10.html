@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 10</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+        label, button {
+            margin-left: 10px;
+        }
+        input, button {
+            margin: 10px 10px;
+        }
+    </style>
+    <script>
+        const Pi = 3.14159265358;
+        function Triangle(xA, yA, xB, yB, xC, yC) {
+            this.xA = Number(xA);
+            this.yA = Number(yA);
+            this.xB = Number(xB);
+            this.yB = Number(yB);
+            this.xC = Number(xC);
+            this.yC = Number(yC);
+            this.context = $('#myCanvas')[0].getContext('2d');
+            this.xCenter = function() {
+                return Math.round((this.xA + this.xB + this.xC) / 3);
+            }
+            this.yCenter = function() {
+                return Math.round((this.yA + this.yB + this.yC) / 3);
+            }
+            this.AB = function() {
+                return this.length(this.xA, this.xB, this.yA, this.yB);
+            }
+            this.AC = function() {
+                return this.length(this.xA, this.xC, this.yA, this.yC);
+            }
+            this.BC = function() {
+                return this.length(this.xB, this.xC, this.yB, this.yC);
+            }
+            this.length = function(x1, x2, y1, y2) {
+                return Math.round(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)));
+            }
+            this.display = function() {
+                this.context.clearRect(0, 0, 1000, 500);
+                this.context.beginPath();
+                this.context.moveTo(this.xA, this.yA);
+                this.context.lineTo(this.xB, this.yB);
+                this.context.lineTo(this.xC, this.yC);
+                this.context.closePath();
+                this.context.strokeStyle = "red";
+                this.context.stroke();
+            }
+            this.moveTo = function(xA, yA, xB, yB, xC, yC) {
+                
+                    this.xB += Number(xA - this.xA);
+                    this.yB += Number(yA - this.yA);
+                    this.xC += Number(xA - this.xA);
+                    this.yC += Number(yA - this.yA);
+                    this.xA = Number(xA);
+                    this.yA = Number(yA);
+                
+                $('#xA').val(this.xA);
+                $('#xB').val(this.xB);
+                $('#xC').val(this.xC);
+                $('#yA').val(this.yA);
+                $('#yB').val(this.yB);
+                $('#yC').val(this.yC);
+                this.display();
+            }
+            this.move = function(delta_x, delta_y) {
+                this.xA += Number(delta_x);
+                this.yA += Number(delta_y);
+                this.xB += Number(delta_x);
+                this.yB += Number(delta_y);
+                this.xC += Number(delta_x);
+                this.yC += Number(delta_y);
+                $('#xA').val(this.xA);
+                $('#xB').val(this.xB);
+                $('#xC').val(this.xC);
+                $('#yA').val(this.yA);
+                $('#yB').val(this.yB);
+                $('#yC').val(this.yC);
+                this.display();
+            }
+            this.scale = function(scale) {
+                xCenter = this.xCenter();
+                yCenter = this.yCenter();
+                this.xA = (-xCenter + this.xA) * Number(scale) + xCenter;
+                this.yA = (-yCenter + this.yA) * Number(scale) + yCenter;
+                this.xB = (-xCenter + this.xB) * Number(scale) + xCenter;
+                this.yB = (-yCenter + this.yB) * Number(scale) + yCenter;
+                this.xC = (-xCenter + this.xC) * Number(scale) + xCenter;
+                this.yC = (-yCenter + this.yC) * Number(scale) + yCenter;
+                $('#xA').val(this.xA);
+                $('#xB').val(this.xB);
+                $('#xC').val(this.xC);
+                $('#yA').val(this.yA);
+                $('#yB').val(this.yB);
+                $('#yC').val(this.yC);
+                this.display();
+            }
+            this.square = function() {
+                return Math.round(0.5 * Math.abs((this.xA - this.xC) * (this.yB - this.yC) - (this.xB - this.xC) * (this.yA - this.yC)));
+            }
+            this.point = function(x, y) {
+                let Sa = Math.round(0.5 * Math.abs((this.xA - this.xC) * (y - this.yC) - (x - this.xC) * (this.yA - this.yC)));
+                let Sc = Math.round(0.5 * Math.abs(((this.xC - this.xB) * (y - this.yB) - (x - this.xB) * (this.yC - this.yB))));
+                let Sb = Math.round(0.5 * Math.abs(((this.xB - this.xA) * (y - this.yA) - (x - this.xA) * (this.yB - this.yA))));
+                if (Sa + Sb + Sc === this.square() && Sa !== 0 && Sb !== 0 && Sc !== 0) return 1;
+                if (Sa + Sb + Sc === this.square()) return 0;
+                if (Sa + Sb + Sc > this.square()) return -1;
+            }
+        }
+    </script>
+    <canvas id="myCanvas" width="1000" height="500"
+            style="background-color:#eee; border: 1px solid #ccc;">
+    </canvas><br>
+    <div>
+        <label for="xA">Введите xA</label><input id="xA" ><br>
+        <label for="yA">Введите yA</label><input id="yA" ><br>
+        <label for="xB">Введите xB</label><input id="xB" ><br>
+        <label for="yB">Введите yB</label><input id="yB" ><br>
+        <label for="xC">Введите xC</label><input id="xC" ><br>
+        <label for="yC">Введите yC</label><input id="yC" ><br>
+        <label for="dX">Введите dX</label><input id="dX" ><br>
+        <label for="dY">Введите dY</label><input id="dY" ><br>
+        <label for="scale">Введите масштаб</label><input id="scale" ><br>
+        <button onclick="new function()
+        {
+            triangle = new Triangle($('#xA').val(), $('#yA').val(), $('#xB').val(), $('#yB').val(), $('#xC').val(),  $('#yC').val());
+            triangle.display();
+        }">Рисовать</button>
+        <button onclick="new function()
+        {
+            triangle.moveTo($('#xA').val(), $('#yA').val(), $('#xB').val(), $('#yB').val(), $('#xC').val(),  $('#yC').val());
+        }">Переместить в</button>
+        <button onclick="new function()
+        {
+            triangle.move($('#dX').val(), $('#dY').val());
+        }">Переместить на</button>
+        <button onclick="new function()
+        {
+            triangle.scale($('#scale').val());
+        }">Масштабировать</button>
+        <button onclick="new function()
+        {
+            switch(triangle.point($('#xA').val(), $('#yA').val()))
+            {
+                case 1: alert('Точка лежит в треугольнике');
+                break
+                case 0: alert('Точка лежит на стороне треугольника');
+                break
+                case -1: alert('Точка лежит вне треугольника');
+                break
+            }
+        }">Проверить точку</button>
+    </div>
+</body>
+</html>

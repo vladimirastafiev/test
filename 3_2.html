@@ -1,0 +1,52 @@
+﻿<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Лабораторная работа 3</title>
+</head>
+<body>
+    <script>
+        function extractCurrencyValue(str) {
+            let i = 1;
+            while (str.charAt(i) >= '0' && str.charAt(i) <= '9' && i < str.length) i++;
+            return str.slice(1, i);
+        }
+        function strToInt(str) {
+            let i = 0;
+            let isPoint = false;
+            while (i < str.length) {
+                if (str.charAt(i) === '.' || str.charAt(i) === ',') {
+                    if (i === 0 || isPoint || i !== str.lastIndexOf(str.charAt(i))) {
+                        return 0;
+                    }
+                    else isPoint = true;
+                }
+                else if (str.charAt(i) === '-') {
+                    if (i !== 0 || i !== str.lastIndexOf("-")) {
+                        return 0;
+                    }
+                }
+                else if (str.charAt(i) < '0' || str.charAt(i) > '9') {
+                    return 0;
+                }
+                i++;
+            }
+            if (!isPoint) {
+                return 1;
+            }
+            else {
+                return 2;
+            }
+        }
+        function Func1() {
+            let str = prompt("Введите стоимость:");
+            alert(extractCurrencyValue(str));
+        }
+        function Func2() {
+            let str = prompt("Введите стоимость:");
+            alert(strToInt(str));
+        }
+    </script>
+    <input type="button" value ="Задание 1" onclick="Func1()"/>
+    <input type="button" value ="Задание 2" onclick="Func2()"/>
+</body>
+</html>

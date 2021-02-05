@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Лабораторная работа 2</title>
+</head>
+<body>
+    <script>
+        function compareNumeric(a, b) {
+            if (Number(a) < Number(b)) return 1;
+            if (Number(a) === Number(b)) return 0;
+            if (Number(a) > Number(b)) return -1;
+        }
+        document.write("Задание 1<br /><br / >Исходный массив <br />");
+        let arr = [];
+        for (let i = 0; i < 10; i++) {
+            let rand = Math.random() * 100;
+            arr.push(rand.toFixed(0));
+            document.write(arr[i] + "<br />");
+        }
+        arr.sort(compareNumeric);
+        document.write("<br / >Полученный массив<br />");
+        arr.forEach((item, i, arr) => {
+            document.write(Number(arr[i]) + "<br / >");
+        });
+        document.write("<br />Задание 2<br /><br />");
+        let matrix = [];
+        for (let i = 0; i < 3; i++) {
+            matrix.push([]);
+            for (let j = 0; j < 5; j++) {
+                let rand = Math.random() * 9;
+                matrix[i].push(rand.toFixed(0));
+                document.write(Number(matrix[i][j]) + " ");
+            }
+            document.write("<br / >");
+        }
+        document.write("<br / >");
+        for(let j = 0; j < 5; j++) {
+            let sum = 0;
+            matrix.forEach((item, i, matrix) => {
+                if (matrix[i][j] % 2 === 0) {
+                sum += Number(matrix[i][j]);
+                }
+            });
+            document.write("Сумма элементов, кратных 2, в столбце " + j + " - " + sum + "<br />");
+        }
+    </script>
+</body>
+</html>

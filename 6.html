@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Лабораторная работа 6</title>
+</head>
+<body>
+<style>
+    #in {
+        width: 500px;
+        margin-bottom: 25px;
+        margin-left: 25px;
+    }
+</style>
+<script>
+    function Func1() { //1
+        let str = document.getElementById('in').value;
+        alert(str.replace(/([a-z0-9]+)@([a-z0-9]+)/g, '$2@$1'));
+    }
+    function Func2() { //13
+        let str = document.getElementById('in').value;
+        alert(str.match(/\d+/g).reduce((sum, el) => sum + Number(el), 0));
+    }
+    function Func3() { //14
+        let str = document.getElementById('in').value;
+        alert(str.replace(/((https?:\/\/)(([a-z]+\.)+[a-z]{2,10}))/g, '<a href = "$1">$3</a>'));
+    }
+    function Func4() { //18
+        let str = document.getElementById('in').value;
+        alert(str.replace(/aaa(?=b)/g, '!'));
+    }
+    function Func5() { //5
+        let str = document.getElementById('in').value;
+        alert(str.match(/[a-zA-Z.-_\d]+@([a-zA-Z]+\.)+[a-z]{2,5}/g).join(' '));
+    }
+    function Func6() { //24
+        let str = document.getElementById('in').value;
+        alert(/^(19\d{2}|20\d{2}|2100)$/.test(str));
+    }
+</script>
+<label for='in'>Введите строку:</label><input id='in' type="text" />
+<br/>
+<input type="button" value="Задание 1" onclick="Func1()"/>
+<input type="button" value="Задание 2" onclick="Func2()"/>
+<input type="button" value="Задание 3" onclick="Func3()"/>
+<input type="button" value="Задание 4" onclick="Func4()"/>
+<input type="button" value="Задание 5" onclick="Func5()"/>
+<input type="button" value="Задание 6" onclick="Func6()"/>
+</body>
+</html>

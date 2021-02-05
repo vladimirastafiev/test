@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 9</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+        label, button {
+            margin-left: 10px;
+        }
+        input, button {
+            margin: 10px 10px;
+        }
+    </style>
+    <script>
+        const Pi = 3.14159265358;
+        var rect = {
+            angle: 0,
+            x: 0,
+            y: 0,
+            width: 0,
+            height: 0,
+            context: '',
+            get xCenter(){
+                return Math.round(this.x + this.width / 2);
+            },
+            get yCenter(){
+                return Math.round(this.y + this.height / 2);
+            },
+            get xA() {
+                return Math.round(this.xCenter + (this.x - this.xCenter) * Math.cos(this.angle) - (this.y - this.yCenter) * Math.sin(this.angle));
+            },
+            get yA(){
+                return Math.round(this.yCenter + (this.x - this.xCenter) * Math.sin(this.angle) + (this.y - this.yCenter) * Math.cos(this.angle));
+            },
+            get xB(){
+                return Math.round(this.xCenter + (this.x + this.width - this.xCenter) * Math.cos(this.angle) - (this.y - this.yCenter) * Math.sin(this.angle));
+            },
+            get yB() {
+                return Math.round(this.yCenter + (this.x + this.width - this.xCenter) * Math.sin(this.angle) + (this.y - this.yCenter) * Math.cos(this.angle));
+            },
+            get xC() {
+                return Math.round(this.xCenter + (this.x + this.width - this.xCenter) * Math.cos(this.angle) - (this.y + this.height - this.yCenter) * Math.sin(this.angle));
+            },
+            get yC() {
+                return Math.round(this.yCenter + (this.x + this.width - this.xCenter) * Math.sin(this.angle) + (this.y + this.height - this.yCenter) * Math.cos(this.angle));
+            },
+            get xD() {
+                return Math.round(this.xCenter + (this.x - this.xCenter) * Math.cos(this.angle) - (this.y + this.height - this.yCenter) * Math.sin(this.angle));
+            },
+            get yD() {
+                return Math.round(this.yCenter + (this.x - this.xCenter) * Math.sin(this.angle) + (this.y + this.height - this.yCenter) * Math.cos(this.angle));
+            },
+            get diagonal() {
+                return Math.round(Math.sqrt(Math.pow(this.xC - this.xA, 2) + Math.pow(this.yC - this.yA, 2)));
+            },
+            get square() {
+                return Math.round(this.width * this.height);
+            },
+            display: function() {
+                this.context.clearRect(0, 0, 1000, 500);
+                this.context.beginPath();
+                this.context.moveTo(this.xA, this.yA);
+                this.context.lineTo(this.xB, this.yB);
+                this.context.lineTo(this.xC, this.yC);
+                this.context.lineTo(this.xD, this.yD);
+                this.context.closePath();
+                this.context.strokeStyle = "red";
+                this.context.stroke();
+            },
+            moveTo: function(x, y) {
+                this.x = Number(x);
+                this.y = Number(y);
+                this.display();
+            },
+            move: function(delta_x, delta_y) {
+                this.x += Number(delta_x);
+                this.y += Number(delta_y);
+                this.display();
+            },
+            scale: function(scale) {
+                this.width *= Number(scale);
+                this.height *= Number(scale);
+                this.display();
+            },
+            rotate: function(angle) {
+                this.angle = this.degToRad(Number(angle));
+                this.display();
+            },
+            degToRad: function(deg) {
+                return deg * Pi / 180;
+            },
+            point: function(x, y) {
+                let Sa = Math.round(0.5 * Math.abs((this.xA - this.xD) * (y - this.yD) - (x - this.xD) * (this.yA - this.yD)));
+                let Sd = Math.round(0.5 * Math.abs(((this.xD - this.xC) * (y - this.yC) - (x - this.xC) * (this.yD - this.yC))));
+                let Sc = Math.round(0.5 * Math.abs(((this.xC - this.xB) * (y - this.yB) - (x - this.xB) * (this.yC - this.yB))));
+                let Sb = Math.round(0.5 * Math.abs(((this.xB - this.xA) * (y - this.yA) - (x - this.xA) * (this.yB - this.yA))));
+                if (Sa + Sb + Sc + Sd === this.square && Sa !== 0 && Sb !== 0 && Sc !== 0 && Sd !== 0) return 1;
+                if (Sa + Sb + Sc + Sd === this.square) return 0;
+                if (Sa + Sb + Sc + Sd > this.square) return -1;
+            }
+        }
+    </script>
+    <canvas id="myCanvas" width="1000" height="500"
+            style="background-color:#eee; border: 1px solid #ccc;">
+    </canvas><br>
+    <div>
+        <label for="x">Введите X</label><input id="x" ><br>
+        <label for="y">Введите Y</label><input id="y" ><br>
+        <label for="width">Введите ширину</label><input id="width" ><br>
+        <label for="height">Введите высоту</label><input id="height" ><br>
+        <label for="scale">Введите масштаб</label><input id="scale" ><br>
+        <label for="rotate">Введите угол поворота</label><input id="rotate" ><br>
+        <button onclick="new function()
+        {
+            rect.x = Number($('#x').val());
+            rect.y = Number($('#y').val());
+            rect.width = Number($('#width').val());
+            rect.height = Number($('#height').val());
+            rect.context = $('#myCanvas')[0].getContext('2d');
+            rect.display();
+        }">Рисовать</button>
+        <button onclick="new function()
+        {
+            rect.moveTo($('#x').val(), $('#y').val());
+        }">Переместить в</button>
+        <button onclick="new function()
+        {
+            rect.move($('#x').val(), $('#y').val());
+        }">Переместить на</button>
+        <button onclick="new function()
+        {
+            rect.scale($('#scale').val());
+        }">Масштабировать</button>
+        <button onclick="new function()
+        {
+            rect.rotate($('#rotate').val());
+        }">Повернуть</button>
+        <button onclick="new function()
+        {
+            alert('Координаты левого верхнего угла - ' + rect.xA + ' ' + rect.yA + '\n' + 'Координаты правого верхнего угла - ' + rect.xB + ' ' + rect.yB + '\n'
+            + 'Координаты правого нижнего угла - ' + rect.xC + ' ' + rect.yC + '\n' + 'Координаты левого нижнего угла - ' + rect.xD + ' ' + rect.yD + '\n'
+            + 'Длина диагонали - ' + rect.diagonal + '\n' + 'Площадь - ' + rect.square);
+        }">Информация об объекте</button>
+        <button onclick="new function()
+        {
+            switch(rect.point($('#x').val(), $('#y').val()))
+            {
+                case 1: alert('Точка лежит в прямоугольнике');
+                break
+                case 0: alert('Точка лежит на стороне прямоугольника');
+                break
+                case -1: alert('Точка лежит вне прямоугольника');
+                break
+            }
+        }">Проверить точку</button>
+    </div>
+</body>
+</html>

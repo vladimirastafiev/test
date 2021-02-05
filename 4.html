@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Лабораторная работа 4</title>
+</head>
+<body>
+    <style>
+       input {
+           margin: 0 10px 0 0;
+       }
+    </style>
+    <script type="text/javascript">
+        function RootsCount(A, B, C) {
+            let D = Math.pow(B, 2) - 4 * A * C;
+            if (D > 0) return 2;
+            else if (D === 0) return 1;
+            else return 0;
+        }
+        function IsSquare(K) {
+            return Number.isInteger(Math.sqrt(K));
+        }
+        function Func(x)
+        {
+            return Math.pow(x, 3);
+        }
+        function Der(f, x0) {
+            let delta = 1;
+            let previous = (f(x0 + delta) - f(x0)) / delta;
+            while (1) {
+                delta /= 2;
+                let current = (f(x0 + delta) - f(x0)) / delta;
+                if (Math.abs(current - previous) <= 0.00001) {
+                    return current;
+                }
+                else {
+                    previous = current;
+                }
+            }
+        }
+    </script>
+    <h1>Задание 1</h1>
+    <label>
+        Введите A
+        <input id="A" type="text"/>
+    </label>
+    <label>
+        Введите B
+        <input id="B" type="text"/>
+    </label>
+    <label>
+        Введите C
+        <input id="C" type="text"/>
+    </label>
+    <br /><br />
+    <button onclick="alert('Количество корней - ' + RootsCount(document.getElementById('A').value, document.getElementById('B').value, document.getElementById('C').value))">
+        Выполнить</button>
+    <h1>Задание 2</h1>
+    <label>
+        Введите через пробел натуральные числа
+        <input id="numbers" type="text"/>
+    </label>
+    <br /><br />
+    <button onclick="new function() {
+        let count = 0;
+        document.getElementById('numbers').value.split(' ').forEach(function(item) {
+            if (IsSquare(Number(item))) {
+                count++;
+            }
+        });
+        alert('Количество квадратов - ' + count);
+        }">Выполнить</button>
+    <h1>Задание 3</h1>
+    <label>
+        Введите x
+        <input id="x" type="text"/>
+    </label>
+    <button onclick="alert('Производная равна ' + Der(Func, Number(document.getElementById('x').value)))">Вычислить</button>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Лабораторная работа 8</title>
+    </head>
+    <body style="background-color: rgb(245, 246, 247);">
+        <div>
+            <h1>Задание 1</h1>
+            <div>
+                <img src="Карандаш.png" alt="Карандаш" id="img1" onmouseover="hover(this.id)" onmouseout="nohover(this.id)">
+                <img src="Заливка.png" alt="Заливка" id="img2" onmouseover="hover(this.id)" onmouseout="nohover(this.id)">
+                <img src="Текст.png" alt="Текст" id="img3" onmouseover="hover(this.id)" onmouseout="nohover(this.id)">
+            </div>
+            <div>
+                <img src="Ластик.png" alt="Ластик" id="img4" onmouseover="hover(this.id)" onmouseout="nohover(this.id)">
+                <img src="Палитра.png" alt="Палитра" id="img5" onmouseover="hover(this.id)" onmouseout="nohover(this.id)">
+                <img src="Масштаб.png" alt="Масштаб" id="img6" onmouseover="hover(this.id)" onmouseout="nohover(this.id)">
+            </div>
+        </div>
+        <div>
+            <h1>Задание 2</h1>
+            <input type="text" name="in" oninput="text(this)">
+            <input type="text" name="out" disabled>
+            <input type="button" value="Пуск" onclick="startTimer();">
+            <input type="button" value="Стоп" onclick="stopTimer();">
+        </div>
+        <div>
+            <h1>Задание 3</h1>
+            <img src="Картинка.jpg" alt="Картинка" onclick="startTimer2(this);">
+        </div>
+        <script>
+            function hover(id) {
+                var image = document.getElementById(id);
+                var name = image.getAttribute("src");
+                image.setAttribute("src", name.substr(0, name.lastIndexOf(".")) + "_Подсветка.png");
+            }
+            function nohover(id) {
+                var image = document.getElementById(id);
+                var name = image.getAttribute("src");
+                image.setAttribute("src", name.substr(0, name.lastIndexOf("_")) + ".png");
+            }
+            function text(input) {
+                document.getElementsByName("out")[0].value = input.value + " ";
+            }
+            var timerId;
+            function startTimer() {
+                timerId = setInterval(timerFunction, 100);
+            }
+            function stopTimer() {
+                clearInterval(timerId);
+            }
+            function timerFunction() {
+                var text = document.getElementsByName("out")[0].value.split("");
+                var c = text.shift();
+                text.push(c);
+                document.getElementsByName("out")[0].value = "";
+                text.forEach(element => {
+                    document.getElementsByName("out")[0].value += element;
+                });
+            }
+            var timerId2;
+            var j = 1;
+            var width;
+            var height;
+            var picture;
+            function startTimer2(img) {
+                picture = img;
+                if (j == 1) {
+                    width = picture.width;
+                    height = picture.height;
+                }
+                j++;
+                timerId2 = setInterval(timerFunction2, 1);
+            }
+            function timerFunction2() {
+                if ((j - 1) % 3 + 1 != 1) {
+                    picture.width += 1;
+                    picture.height += Math.floor(width / height);
+                    if (picture.width >= width * ((j - 1) % 3 + 1)) clearInterval(timerId2);
+                }
+                else {
+                    picture.width -= 1;
+                    picture.height -= Math.floor(width / height);
+                    if (picture.width <= width) clearInterval(timerId2);
+                }
+            }
+        </script>
+    </body>
+</html>

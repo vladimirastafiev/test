@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Лабораторная работа 5</title>
+</head>
+<body>
+    <style>
+       #in {
+           width: 500px;
+           margin-bottom: 25px;
+           margin-left: 25px;
+       }
+    </style>
+    <script>
+        function Func1() { //1
+            let str = document.getElementById('in').value;
+            alert(str.match(/a[hce]b/g).join(' '));
+        }
+        function Func2() { //19
+            let str = document.getElementById('in').value;
+            alert(str.match(/-?\d+(\.\d+)?/g).join(' '));
+        }
+        function Func3() { //20
+            let str = document.getElementById('in').value;
+            alert(str.match(/ab{2,4}a/g).join(' '));
+        }
+        function Func4() { //28
+            let str = document.getElementById('in').value;
+            alert(str.replace(/\s/g, '!'));
+        }
+        function Func5() { //29
+            let str = document.getElementById('in').value;
+            alert(str.match(/a[bex]a/g).join(' '));
+        }
+        function Func6() { //47
+            let str = document.getElementById('in').value;
+            alert(str.replace(/\/.{3}\\/g, '!'));
+        }
+    </script>
+    <label for='in'>Введите строку:</label><input id='in' type="text" />
+    <br/>
+    <input type="button" value="Задание 1" onclick="Func1()"/>
+    <input type="button" value="Задание 2" onclick="Func2()"/>
+    <input type="button" value="Задание 3" onclick="Func3()"/>
+    <input type="button" value="Задание 4" onclick="Func4()"/>
+    <input type="button" value="Задание 5" onclick="Func5()"/>
+    <input type="button" value="Задание 6" onclick="Func6()"/>
+</body>
+</html>
