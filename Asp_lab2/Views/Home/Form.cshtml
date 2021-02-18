@@ -1,0 +1,43 @@
+﻿<form>
+    <label for="in_number">Исходное число:</label>
+    <input type="text" id="in_number" />
+    <fieldset>
+        <legend>Исходная система счисления</legend>
+        <p>
+            <input type="radio" value="2" name="in" />Двоичная
+        </p>
+        <p>
+            <input type="radio" value="4" name="in" />Четвертичная
+        </p>
+        <p>
+            <input type="radio" value="8" name="in" />Восьмеричная
+        </p>
+        <p>
+            <input type="radio" value="10" name="in" />Десятичная
+        </p>
+        <p>
+            <input type="radio" value="16" name="in" />Шестнадцатеричная
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Полученная система счисления</legend>
+        <p>
+            <input type="radio" value="2" name="out" />Двоичная
+        </p>
+        <p>
+            <input type="radio" value="4" name="out" />Четвертичная
+        </p>
+        <p>
+            <input type="radio" value="8" name="out" />Восьмеричная
+        </p>
+        <p>
+            <input type="radio" value="10" name="out" />Десятичная
+        </p>
+        <p>
+            <input type="radio" value="16" name="out" />Шестнадцатеричная
+        </p>
+    </fieldset>
+    <label for="out_number">Полученное число:</label>
+    <input type="text" id="out_number" readonly/>
+    <input type="submit" value="Перевести" asp-controller="Form" asp-action="System"/>
+</form>

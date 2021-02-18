@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Задание 2";
+}
+
+<div class="text-center">
+    <h1>Задание 2</h1>
+    <table align="center" border="1">
+        <tr>
+        @{
+            int[] array = Model.array;
+            foreach (var cell in array)
+            {
+                <td>
+                    @cell
+                </td>
+            }
+        }
+        </tr>
+    </table>
+    <p>Пары чисел, модуль разности между которыми равен 2</p>
+    @{ 
+        List<int> indexes = Model.indexes;
+        for (int i = 0; i < indexes.Count; i += 2)
+        {
+        <span>array[@indexes[i]] = @array[indexes[i]] и array[@indexes[i + 1]] = @array[indexes[i + 1]]</span><br />
+        }
+    }
+</div>
