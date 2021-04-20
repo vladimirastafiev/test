@@ -1,0 +1,306 @@
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\appsettings.json
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\LevelClever.exe
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\LevelClever.deps.json
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\LevelClever.runtimeconfig.json
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\LevelClever.runtimeconfig.dev.json
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\LevelClever.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\ref\LevelClever.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\LevelClever.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\LevelClever.Views.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\LevelClever.Views.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.csprojAssemblyReference.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.AssemblyInfoInputs.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.AssemblyInfo.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.csproj.CoreCompileInputs.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.RazorAssemblyInfo.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.RazorAssemblyInfo.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\staticwebassets\LevelClever.StaticWebAssets.Manifest.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\staticwebassets\LevelClever.StaticWebAssets.xml
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\scopedcss\bundle\LevelClever.styles.css
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.TagHelpers.input.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.TagHelpers.output.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.RazorCoreGenerate.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.RazorTargetAssemblyInfo.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.RazorTargetAssemblyInfo.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.Views.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\ref\LevelClever.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.genruntimeconfig.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\LevelClever.csproj.CopyComplete
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\appsettings.json
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\LevelClever.exe
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\LevelClever.deps.json
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\LevelClever.runtimeconfig.json
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\LevelClever.runtimeconfig.dev.json
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\LevelClever.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\ref\LevelClever.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\LevelClever.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\LevelClever.Views.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\LevelClever.Views.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.csprojAssemblyReference.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.AssemblyInfoInputs.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.AssemblyInfo.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.csproj.CoreCompileInputs.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.RazorAssemblyInfo.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.RazorAssemblyInfo.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\staticwebassets\LevelClever.StaticWebAssets.Manifest.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\staticwebassets\LevelClever.StaticWebAssets.xml
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\scopedcss\bundle\LevelClever.styles.css
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.TagHelpers.input.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.TagHelpers.output.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.RazorCoreGenerate.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.RazorTargetAssemblyInfo.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.RazorTargetAssemblyInfo.cs
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.Views.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.csproj.CopyComplete
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\ref\LevelClever.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.pdb
+C:\Users\Владимир\Desktop\Программирование\LevelClever — копия (2)\obj\Debug\net5.0\LevelClever.genruntimeconfig.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\appsettings.json
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\LevelClever.exe
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\LevelClever.deps.json
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\LevelClever.runtimeconfig.json
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\LevelClever.runtimeconfig.dev.json
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\LevelClever.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\ref\LevelClever.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\LevelClever.pdb
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\LevelClever.Views.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\LevelClever.Views.pdb
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.AssemblyInfo.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.RazorAssemblyInfo.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.RazorAssemblyInfo.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\staticwebassets\LevelClever.StaticWebAssets.Manifest.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\staticwebassets\LevelClever.StaticWebAssets.xml
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\scopedcss\bundle\LevelClever.styles.css
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.TagHelpers.input.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.TagHelpers.output.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.RazorCoreGenerate.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.RazorTargetAssemblyInfo.cache
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.RazorTargetAssemblyInfo.cs
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.Views.pdb
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.csproj.CopyComplete
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\ref\LevelClever.dll
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.pdb
+C:\Users\Alex\source\repos\LevelClever\LevelClever\obj\Debug\net5.0\LevelClever.genruntimeconfig.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\appsettings.json
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\LevelClever.exe
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\LevelClever.deps.json
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\LevelClever.runtimeconfig.json
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\LevelClever.runtimeconfig.dev.json
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\LevelClever.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\ref\LevelClever.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\LevelClever.pdb
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\LevelClever.Views.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\LevelClever.Views.pdb
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.csprojAssemblyReference.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.AssemblyInfoInputs.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.AssemblyInfo.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.csproj.CoreCompileInputs.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.RazorAssemblyInfo.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.RazorAssemblyInfo.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\staticwebassets\LevelClever.StaticWebAssets.Manifest.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\staticwebassets\LevelClever.StaticWebAssets.xml
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\scopedcss\bundle\LevelClever.styles.css
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.TagHelpers.input.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.TagHelpers.output.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.RazorCoreGenerate.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.RazorTargetAssemblyInfo.cache
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.RazorTargetAssemblyInfo.cs
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.Views.pdb
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.csproj.CopyComplete
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\ref\LevelClever.dll
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.pdb
+C:\Users\Владимир\Downloads\LevelClever-master (1)\LevelClever-master\obj\Debug\net5.0\LevelClever.genruntimeconfig.cache
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\NTPDateTime.dll
+C:\Users\Владимир\Desktop\Программирование\LevelClever\bin\Debug\net5.0\NTPDateTime.pdb

@@ -1,0 +1,96 @@
+@import "../../fonts/Gilroy/stylesheet.css";
+*{
+	font-family: Gilroy, sans-serif; 
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+.authorization {
+	background-image: url(../../img/bg.png);
+	padding: 4% 0;
+}
+
+form {
+	margin: 0 auto; 
+	width: 26.6rem;
+	height: 38.5rem;
+	background: #FFFFFF;
+	box-shadow: 2px 4px 15px rgba(25, 35, 145, 0.15);
+	border-radius: 2rem;
+}
+.logo img{
+    display: block;
+ 	margin-left: auto;
+    margin-right: auto;
+    padding-top: 6%;
+}
+
+label{
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 2rem;
+	color: #192391;
+	padding: 0 1rem;
+}
+.container {
+    padding: 6.2rem 3rem; 
+}
+input[type=text] {
+	margin-bottom: 7%;
+}
+input[type=text], input[type=password] {
+    width: 21rem;
+	height: 2.5rem;
+    padding: 0 1rem;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: rgba(25, 35, 145, 0.05);
+	border-radius: 1.8rem;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 3% 3%;
+    margin: 50px 0;
+    border: none;
+    cursor: pointer;
+    width: 34%;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	background: #192391;
+	border-radius: 30px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+}
+.text-form{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	color: #54556B;
+}
+.colortext {
+     color: #192391;
+     font-weight: 600;
+   }
+.text-form2{
+	color: #192391;
+    font-weight: 600;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	margin-top: 10%;
+}

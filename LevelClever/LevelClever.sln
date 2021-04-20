@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelClever", "LevelClever.csproj", "{A458A072-17D6-4747-B2B2-9A0AAF91B6A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LevelClever", "LevelClever.csproj", "{9614DFB9-F624-4852-A8F2-012C9AF5B86F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A458A072-17D6-4747-B2B2-9A0AAF91B6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A458A072-17D6-4747-B2B2-9A0AAF91B6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A458A072-17D6-4747-B2B2-9A0AAF91B6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A458A072-17D6-4747-B2B2-9A0AAF91B6A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9614DFB9-F624-4852-A8F2-012C9AF5B86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9614DFB9-F624-4852-A8F2-012C9AF5B86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9614DFB9-F624-4852-A8F2-012C9AF5B86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9614DFB9-F624-4852-A8F2-012C9AF5B86F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {87BCD633-9CAA-4BDB-B33F-2F2CA8DE3AA5}
+		LessCompiler = 9614dfb9-f624-4852-a8f2-012c9af5b86f
+		SolutionGuid = {9A08D916-9A3B-4664-9EB1-34643BC34843}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,483 @@
+.right-aside-container {
+overflow-y: auto;
+border-radius: 25px 0px 0px 25px;
+background-color: #ffffff
+}
+
+.right-aside-container .swipe-stick {
+display: flex;
+justify-content: center;
+align-items: center;
+display: none;
+position: fixed;
+top: 50%;
+transform: translate(-100%, -100%);
+height: 50px;
+width: 20px;
+border-radius: 30px 0px 0px 30px;
+background-color: #ededed
+}
+
+.right-aside-container .swipe-stick > span {
+display: flex;
+justify-content: center;
+align-items: center;
+height: max-content;
+margin-bottom: 20%;
+font-size: calc(var(--common_fontSize) + 1.1rem);
+color: #6b6b6b
+}
+
+.right-aside-container .right-aside {
+width: 93%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+margin: auto
+}
+
+.right-aside-container .right-aside .search-course-field {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+padding-top: 2%;
+padding-bottom: 2%;
+border-radius: 25px;
+margin-top: 5%;
+background-color: rgba(25,35,145,0.05)
+}
+
+.right-aside-container .right-aside .search-course-field input[type="search"] {
+width: 90%;
+height: 100%;
+padding-left: 5.5%;
+border-radius: 25px 0px 0px 25px;
+font-size: calc(var(--common_fontSize) - .2rem);
+outline: none;
+background: none;
+border: none
+}
+
+.right-aside-container .right-aside .search-course-field .search-icon {
+width: 4%;
+margin-right: 4%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer
+}
+
+.right-aside-container .right-aside .calendar-notes {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+align-items: flex-start;
+flex-direction: column;
+height: max-content;
+margin-top: 7.5%
+}
+
+.right-aside-container .right-aside .calendar-notes .change-month-field {
+width: 92%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-between;
+flex-direction: row;
+margin: auto;
+margin-bottom: 3%;
+cursor: pointer
+}
+
+.right-aside-container .right-aside .calendar-notes .change-month-field .month_year span {
+font-size: calc(var(--common_fontSize) - .1rem);
+font-weight: 600;
+color: #192391
+}
+
+.right-aside-container .right-aside .calendar-notes .change-month-field .change-month_btns {
+width: 17%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer
+}
+
+.right-aside-container .right-aside .calendar-notes .change-month-field .change-month_btns > div {
+width: calc(var(--witdhRatio) + 13px);
+height: calc(var(--witdhRatio) + 13px);
+display: flex;
+justify-content: center;
+align-items: center
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field {
+width: 100%;
+position: relative;
+height: max-content
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field table {
+width: 100%;
+height: 100%;
+text-align: center;
+table-layout: fixed
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field table th {
+padding-top: 3%;
+padding-bottom: 3%;
+font-size: calc(var(--common_fontSize) - .2em);
+font-weight: 500;
+color: #9193B8
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field table td {
+position: relative
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field table td div.numDay {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+width: 5px;
+height: 5px;
+padding: 32%;
+margin: auto;
+font-size: calc(var(--common_fontSize) - .1rem);
+font-weight: 600;
+color: #54556B;
+border-radius: 100%;
+z-index: 0
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field table td div.numDay:hover {
+top: 0;
+background-color: #54556b36;
+cursor: pointer
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field table td div.dayNote-cntnr-in-calendar {
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+width: 25px;
+height: 25px;
+padding: calc(var(--paddingNumDay) + 3%);
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 100%;
+z-index: 0
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field table td div.notes-count {
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+width: 10px;
+height: 10px;
+top: 0%;
+right: 3%;
+padding: calc(var(--paddingNumDay) - 5%);
+border-radius: 100%;
+text-align: center;
+font-weight: 700;
+font-size: calc(var(--common_fontSize) - .5rem);
+color: white
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field .select-month-or-year {
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: #fff;
+visibility: hidden
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field .select-month-or-year .months-or-year-list {
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: #fff;
+z-index: 1
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field .select-month-or-year .months-or-year-list td {
+font-weight: 600;
+font-size: calc(var(--common_fontSize) - .1rem)
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field .select-month-or-year .months-or-year-list td:hover {
+border-radius: 0 !important;
+background-color: rgba(25,35,145,0.076) !important
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field .select-month-or-year #overlap-block {
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: #fff;
+z-index: 1;
+z-index: 2
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field .select-month-or-year #overlap-block td {
+font-weight: 600;
+font-size: calc(var(--common_fontSize) - .1rem)
+}
+
+.right-aside-container .right-aside .calendar-notes .calendar-field .select-month-or-year #overlap-block td:hover {
+border-radius: 0 !important;
+background-color: rgba(25,35,145,0.076) !important
+}
+
+.right-aside-container .right-aside .list-class-schedule {
+width: 92%;
+height: max-content;
+margin-top: 8%
+}
+
+.right-aside-container .right-aside .list-class-schedule .header-sections {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+justify-content: space-between
+}
+
+.right-aside-container .right-aside .list-class-schedule .header-sections .sections_titles {
+font-size: calc(var(--common_fontSize) - .1rem);
+font-weight: 600;
+color: #192391
+}
+
+.right-aside-container .right-aside .list-class-schedule .header-sections .dateNow {
+width: 25%;
+padding: 1%;
+border-radius: 15px;
+font-weight: 600;
+background-color: rgba(25,35,145,0.1);
+color: #192391;
+text-align: center;
+cursor: pointer
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+height: max-content;
+margin: auto;
+margin-top: 7.5%
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl li {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+height: max-content;
+list-style-type: none
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl li span.time-item {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 10%;
+height: 20px;
+font-size: calc(var(--common_fontSize) - .2em);
+color: #9193B8
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl li div.content-item {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+width: 83%;
+height: max-content;
+margin-bottom: 5%;
+border-radius: 30px;
+overflow: hidden
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl li div.content-item > div {
+height: 100%
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl li div.content-item .icon-item {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 5%;
+border-radius: 100%;
+width: calc(var(--witdhRatio) + 27px);
+height: calc(var(--witdhRatio) + 27px)
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl li div.content-item .icon-item img {
+width: 100%;
+height: 100%
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl li div.content-item .text-item {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 74%;
+margin-right: 5%;
+margin-left: 4% !important
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl li div.content-item .text-item > span {
+width: 100%;
+height: max-content;
+text-align: start
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl li div.content-item .text-item .title_course {
+margin-top: 3%;
+font-size: calc(var(--common_fontSize) - .1rem);
+font-weight: 600
+}
+
+.right-aside-container .right-aside .list-class-schedule ul.enum-clss-schdl li div.content-item .text-item .homework_course {
+font-size: calc(var(--common_fontSize) - .2rem);
+margin-top: 1%;
+margin-bottom: 3%
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar {
+width: 92%;
+height: max-content;
+margin-top: 7.5%
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .header-sections {
+width: 100%;
+height: max-content;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-between
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .header-sections .sections_titles {
+font-size: calc(var(--common_fontSize) - .1rem);
+font-weight: 600;
+color: #192391
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .header-sections .dateNow {
+width: 25%;
+padding: 1%;
+border-radius: 15px;
+font-weight: 600;
+background-color: rgba(25,35,145,0.1);
+color: #192391;
+text-align: center;
+cursor: pointer
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .enum-notes-from-calendar {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+height: max-content;
+margin-top: 7.5%
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .enum-notes-from-calendar li {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+justify-content: flex-end;
+width: 100%;
+height: max-content;
+margin-bottom: 5%;
+list-style-type: none;
+border-radius: 5px;
+overflow: hidden
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .enum-notes-from-calendar li div.colorMarking {
+position: absolute;
+width: 3%;
+height: 100%;
+left: 0
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .enum-notes-from-calendar li span.text-item {
+width: 83%;
+margin: 5% auto;
+margin-right: 8%;
+text-align: start;
+line-height: 25px;
+font-size: calc(var(--common_fontSize) - .1rem);
+font-weight: 500;
+color: #192391
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .enum-notes-from-calendar li span.classTeacherName {
+width: 83%;
+margin-top: 5%
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .enum-notes-from-calendar li .underBlock {
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-between;
+width: 83%;
+margin: 3% auto;
+margin-bottom: 5%;
+margin-right: 8%
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .enum-notes-from-calendar li .underBlock span.datetime-item {
+width: 60%
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .enum-notes-from-calendar li .underBlock .ed-del-item-btns {
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-between;
+width: 20%;
+height: max-content
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .enum-notes-from-calendar li .underBlock .ed-del-item-btns > button {
+border: none
+}
+
+.right-aside-container .right-aside .list-notes-from-calendar .enum-notes-from-calendar li .underBlock .ed-del-item-btns > button:active {
+    border: none
+}

@@ -1,0 +1,197 @@
+.left-aside {
+width: 13.5%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+position: relative;
+border-radius: 0px 25px 25px 0px
+}
+
+.left-aside .logo {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+width: 62%;
+height: 5%;
+margin-top: 5.5%
+}
+
+.left-aside .logo .logo-icon {
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center
+}
+
+.left-aside .logo .logo-title {
+margin-left: 4%;
+font-size: calc(var(--common_fontSize) + .15rem);
+font-weight: 600;
+color: #192391
+}
+
+.left-aside .nav-menu {
+width: 100%;
+height: 32%;
+margin-top: 21%;
+display: flex;
+justify-content: flex-end
+}
+
+.left-aside .nav-menu ul.nav {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 90%;
+height: 100%
+}
+
+.left-aside .nav-menu ul.nav .nav-item {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: start;
+flex: initial;
+position: relative;
+width: 100%;
+height: 17.5%
+}
+
+.left-aside .nav-menu ul.nav .nav-item.active {
+border-radius: 25px 0px 0px 25px;
+background-color: #F3F4F9
+}
+
+.left-aside .nav-menu ul.nav .nav-item.active::after {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 130%;
+    padding: 0px;
+    right: -20px;
+    background: radial-gradient(circle at 0 100%, rgba(204,0,0,0) 7px, #F3F4F9 0),radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 0, #F3F4F9 0),radial-gradient(circle at 100% 0, rgba(204,0,0,0) 0, #F3F4F9 0),radial-gradient(circle at 0 0, rgba(204,0,0,0) 7px, #F3F4F9 0);
+    background-position: bottom left, bottom right, top right, top left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat
+}
+
+.left-aside .nav-menu ul.nav .nav-item.active .nav-link {
+    font-weight: 600;
+    color: #192391
+}
+
+.left-aside .nav-menu ul.nav .nav-item.active .nav-item-icon svg path {
+    fill: #192391
+}
+
+.left-aside .nav-menu ul.nav .nav-item .nav-item-icon {
+width: 9%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 8%;
+margin-right: 7.7%
+}
+
+.left-aside .nav-menu ul.nav .nav-item .nav-item-icon svg path {
+    fill: #54556B
+}
+
+.left-aside .nav-menu ul.nav .nav-item .nav-link {
+display: block;
+width: max-content;
+margin-top: 1%;
+padding: 0 !important;
+font-weight: 500;
+font-size: calc(var(--common_fontSize) - .1rem);
+text-decoration: unset;
+color: #54556B
+}
+
+.left-aside .exit_btn {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+width: 80%;
+height: 5%;
+margin-top: 1%;
+margin: auto;
+margin-bottom: 10%;
+padding-left: 7%;
+border-radius: 15px;
+background-color: #19239107
+}
+
+.left-aside .exit_btn li.nav-item {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: start;
+flex: initial;
+position: relative;
+width: 100%;
+height: 17.5%
+}
+
+.left-aside .exit_btn li.nav-item.active {
+border-radius: 25px 0px 0px 25px;
+background-color: #F3F4F9
+}
+
+.left-aside .exit_btn li.nav-item.active::after {
+content: '';
+position: absolute;
+width: 27px;
+height: 130%;
+padding: 0px;
+right: -20px;
+background: radial-gradient(circle at 0 100%, rgba(204,0,0,0) 7px, #F3F4F9 0),radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 0, #F3F4F9 0),radial-gradient(circle at 100% 0, rgba(204,0,0,0) 0, #F3F4F9 0),radial-gradient(circle at 0 0, rgba(204,0,0,0) 7px, #F3F4F9 0);
+background-position: bottom left, bottom right, top right, top left;
+background-size: 50% 50%;
+background-repeat: no-repeat
+}
+
+.left-aside .exit_btn li.nav-item.active .nav-link {
+font-weight: 600;
+color: #192391
+}
+
+.left-aside .exit_btn li.nav-item.active .nav-item-icon svg path {
+fill: #192391
+}
+
+.left-aside .exit_btn li.nav-item .nav-item-icon {
+width: 9%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 8%;
+margin-right: 7.7%
+}
+
+.left-aside .exit_btn li.nav-item .nav-item-icon svg path {
+fill: #54556B
+}
+
+.left-aside .exit_btn li.nav-item .nav-link {
+display: block;
+width: max-content;
+margin-top: 1%;
+padding: 0 !important;
+font-weight: 500;
+font-size: calc(var(--common_fontSize) - .1rem);
+text-decoration: unset;
+color: #54556B
+}
+
+.left-aside .exit_btn a {
+border: none;
+color: #54556B;
+font-weight: 500;
+font-size: var(--common_fontSize);
+background-color: #19239100
+}

@@ -1,0 +1,39 @@
+﻿@model LevelClever.ViewModels.LoginViewModel
+@{ Layout = null; }
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/assets/img/logo.ico" type="image/x-icon">
+    <title>Levelclever - Авторизація</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/assets/css/LoginPage/style.css">
+</head>
+<body>
+    <div class="authorization">
+        <form method="post" asp-controller="Account" asp-action="Login">
+            <div class="logo">
+                <img src="~/assets/img/LoginPage/logo.svg">
+            </div>
+            <div class="container">
+                <div asp-validation-summary="ModelOnly"></div>
+
+                <label asp-for="Email"><b>E-mail:</b></label>
+                <input type="text" placeholder="Введіть ваш e-mail..." asp-for="Email">
+                <span asp-validation-for="Email"></span>
+
+                <label asp-for="Password"><b>Пароль:</b></label>
+                <input type="password" placeholder="Введіть ваш пароль..." asp-for="Password">
+                <span asp-validation-for="Password"></span>
+
+                <button type="submit">Увійти</button>
+                <div class="text-form">
+                    Немає аккаунту? <a asp-controller="Account" asp-action="Register"><span class="colortext">Зареєструватися!</span></a>
+                </div>
+                <div class="text-form2">Забули пароль?</div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

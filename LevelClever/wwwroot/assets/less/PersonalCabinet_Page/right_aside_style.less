@@ -1,0 +1,451 @@
+/* vars */
+@titleTextColor: #192391;
+/*------*/
+
+/* Mixins (selector-functions) */
+.sections_titles() {
+    font-size: calc(var(--common_fontSize) - 0.1rem);
+    font-weight: 600;
+    color:#192391;
+}
+
+.dateNow() {
+    width: 25%;
+    padding: 1%;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: rgba(25,35,145,0.1);
+    color: @titleTextColor;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.displayFlex_H-V_CenterRules() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------- */
+
+.right-aside-container {
+    overflow-y: auto;
+    border-radius: 25px 0px 0px 25px;
+    background-color: #ffffff;
+
+    .swipe-stick {
+        .displayFlex_H-V_CenterRules();
+        display: none;
+        position: fixed;
+        top: 50%;
+        transform: translate(-100%, -100%);
+        height: 50px;
+        width: 20px;
+        border-radius: 30px 0px 0px 30px;
+        background-color: rgb(237, 237, 237);
+
+        & > span {
+            .displayFlex_H-V_CenterRules();
+            height: max-content;
+            margin-bottom: 20%;
+            font-size: calc(var(--common_fontSize) + 1.1rem);
+            color: rgb(107, 107, 107);
+        }
+    }
+
+    .right-aside {
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: auto;
+        
+        /* "Search course" field  */
+        .search-course-field {
+            .displayFlex_H-V_CenterRules();
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            border-radius: 25px;
+            margin-top: 5%;
+            background-color: rgba(25, 35, 145, 0.05);
+
+            input[type="search"] {
+                width: 90%;
+                height: 100%;
+                padding-left: 5.5%;
+                border-radius: 25px 0px 0px 25px;
+                font-size: calc(var(--common_fontSize) - 0.2rem);
+                outline: none;
+                background: none;
+                border: none;
+            }
+
+            .search-icon {
+                width: 4%;
+                margin-right: 4%;
+                .displayFlex_H-V_CenterRules();
+                cursor: pointer;
+            }
+        }
+
+        /* Calendar for notes */
+        .calendar-notes {
+            width: 100%;
+            .displayFlex_H-V_CenterRules();
+            align-items: flex-start;
+            flex-direction: column;
+            height: max-content;
+            margin-top: 7.5%;
+
+            /* Change month */
+            .change-month-field {
+                width: 92%;
+                height: 100%;
+                .displayFlex_H-V_CenterRules();
+                justify-content: space-between;
+                flex-direction: row;
+                margin: auto;
+                margin-bottom: 3%;
+                cursor: pointer;
+
+                .month_year span {
+                   .sections_titles();
+                }
+
+                .change-month_btns {
+                    width: 17%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+
+                    & > div {
+                        width: calc(var(--witdhRatio) + 13px);
+                        height: calc(var(--witdhRatio) + 13px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                } 
+            }
+
+            /* Calendar field */
+            .calendar-field {
+                width: 100%;
+                position: relative;
+                height: max-content;
+
+                table {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    table-layout: fixed;
+
+                    th {
+                        padding-top: 3%;
+                        padding-bottom: 3%;
+                        font-size: calc(var(--common_fontSize) - 0.2em);
+                        font-weight: 500;
+                        color: #9193B8;
+                       
+                    }
+
+                    td {
+                        position: relative;
+
+                        div.numDay {
+                            .displayFlex_H-V_CenterRules();
+                            position: relative;
+                            width: 5px;
+                            height: 5px;
+                            padding: 32%;
+                            margin: auto;
+                            font-size: calc(var(--common_fontSize) - 0.1rem);
+                            font-weight: 600;
+                            color: #54556B;
+                            border-radius: 100%;
+                            z-index: 0;
+
+                            &:hover {
+                                top: 0;
+                                background-color: #54556b36;
+                                cursor: pointer;
+                            }
+                        }
+
+                        div.dayNote-cntnr-in-calendar {
+                            .displayFlex_H-V_CenterRules();
+                            position: absolute;
+                            width: 25px;
+                            height: 25px;
+                            padding: calc(var(--paddingNumDay) + 3%);
+                            top: 50%; 
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            border-radius: 100%;
+                            z-index: 0;
+                        }
+
+                        div.notes-count {
+                            .displayFlex_H-V_CenterRules();
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            top: 0%; 
+                            right: 3%;
+                            padding: calc(var(--paddingNumDay) - 5%);
+                            border-radius: 100%;
+                            text-align: center;
+                            font-weight: 700;
+                            font-size: calc(var(--common_fontSize) - 0.5rem);
+                            color: white;
+                        }
+                    }
+                }
+
+                /* Select month field */
+                .select-month-or-year {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(255, 255, 255);
+                    visibility: hidden;
+
+                    .months-or-year-list {
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgb(255, 255, 255);
+                        z-index: 1;
+
+                        td {
+                            font-weight: 600;
+                            font-size: calc(var(--common_fontSize) - 0.1rem);
+
+                            &:hover {
+                                border-radius: 0 !important;
+                                background-color: rgba(25, 35, 145, 0.076) !important;
+                            }
+                        }
+                    }
+
+                    #overlap-block {
+                        .months-or-year-list;
+                        z-index: 2;
+                    }
+                }
+            } 
+
+        }
+
+        /* List notes that were generated after select calendar days with notes*/
+        .list-class-schedule {
+            width: 92%; 
+            height: max-content;
+            margin-top: 8%;
+
+            .header-sections {
+                width: 100%;
+                .displayFlex_H-V_CenterRules();
+                margin: auto;
+                justify-content: space-between;
+
+                .sections_titles {
+                    .sections_titles();
+
+                    span {
+                        
+                    }
+                }
+
+                .dateNow {
+                    .dateNow();
+                }
+            }
+
+            ul.enum-clss-schdl {
+                .displayFlex_H-V_CenterRules();
+                flex-direction: column;
+                width: 100%;
+                height: max-content;
+                margin: auto;
+                margin-top: 7.5%;
+            
+                li {
+                    .displayFlex_H-V_CenterRules();
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: max-content;
+                    list-style-type: none;
+
+                    span.time-item {
+                        .displayFlex_H-V_CenterRules();
+                        width: 10%;
+                        height: 20px;
+                        font-size: calc(var(--common_fontSize) - 0.2em);
+                        color:#9193B8;
+                    }
+
+                    div.content-item {
+                        .displayFlex_H-V_CenterRules();
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 83%;
+                        height: max-content;
+                        margin-bottom: 5%;
+                        border-radius: 30px;
+                        overflow: hidden;
+
+                        & > div{
+                            height: 100%;
+                        }//швидко займ,  швидко гроші, смартивей, егроши ком
+
+                        .icon-item {
+                            .displayFlex_H-V_CenterRules();
+                            margin-left: 5%;
+                            border-radius: 100%;
+                            width: calc(var(--witdhRatio) + 27px);
+                            height: calc(var(--witdhRatio) + 27px);
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .text-item {
+                            .displayFlex_H-V_CenterRules();
+                            flex-direction: column;
+                            width: 74%;
+                            margin-right: 5%;
+                            margin-left: 4% !important;
+
+                            & > span {
+                                width: 100%;
+                                height: max-content;
+                                text-align: start;
+                            }
+
+                            .title_course {
+                                margin-top: 3%;
+                                font-size: calc(var(--common_fontSize) - 0.1rem);
+                                font-weight: 600;
+                            }
+
+                            .homework_course {
+                                font-size: calc(var(--common_fontSize) - 0.2rem);
+                                margin-top: 1%;
+                                margin-bottom: 3%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* List class schedule */
+        .list-notes-from-calendar {
+            width: 92%;
+            height: max-content;
+            margin-top: 7.5%;
+
+            .header-sections {
+                width: 100%;
+                height: max-content;
+                margin: auto;
+                .displayFlex_H-V_CenterRules();
+                justify-content: space-between;
+
+                .sections_titles {
+                    .sections_titles();
+                }
+
+                .dateNow {
+                    .dateNow();
+                }
+            }
+
+            .enum-notes-from-calendar {
+                .displayFlex_H-V_CenterRules();
+                flex-direction: column;
+                width: 100%;
+                height: max-content;
+                margin-top: 7.5%;
+            
+                li {
+                    position: relative;
+                    .displayFlex_H-V_CenterRules();
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    width: 100%;
+                    height: max-content;
+                    margin-bottom: 5%;
+                    list-style-type: none;
+                    border-radius: 5px;
+                    overflow: hidden;
+
+                    div.colorMarking {
+                        position: absolute;
+                        width: 3%;
+                        height: 100%;
+                        left: 0;
+                    }
+
+                    span.text-item {
+                        width: 83%;
+                        margin: 5% auto;
+                        margin-right: 8%;
+                        text-align: start;
+                        line-height: 25px;
+                        font-size: calc(var(--common_fontSize) - 0.1rem);
+                        font-weight: 500;
+                        color: @titleTextColor
+                    }
+
+                    span.classTeacherName {
+                        width: 83%;
+                        margin-top: 5%;
+                    }
+
+                    .underBlock {
+                        .displayFlex_H-V_CenterRules();
+                        justify-content: space-between;
+                        width: 83%;
+                        margin: 3% auto;
+                        margin-bottom: 5%;
+                        margin-right: 8%;
+
+                        span.datetime-item {
+                            width: 60%;
+                        }
+
+                        .ed-del-item-btns {
+                            .displayFlex_H-V_CenterRules();
+                            justify-content: space-between;
+                            width: 20%;
+                            height: max-content;
+
+                            & > button {
+                                border: none;
+
+                                &:active {
+                                    border: none;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+            
+    }
+}

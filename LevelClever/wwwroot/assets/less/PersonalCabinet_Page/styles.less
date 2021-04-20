@@ -1,0 +1,605 @@
+:root {
+    --common_fontSize: 1.3rem;
+    --witdhRatio: 10px;
+    --widthImageElements: 50px;
+    --paddingNumDay: 10%;
+}
+
+/* ------- */
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0.0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy';
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #F3F4F9 !important;
+
+    .left-aside {
+        position: fixed;
+        left: 0;
+        height: 100vh;
+        background-color: #ffffff;
+    }
+    
+    .center-section-container {
+        margin-left: 13.5%;
+        background-color: #F3F4F9;
+    }
+    
+    .right-aside-container {
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        background-color: #ffffff;
+    }
+}
+
+
+@media all and (min-width: 1793px) and (max-width: 2048px) {  /* avg - 1920 */
+    * {
+        font-size: 15px;
+    }
+
+    .center-section-container {
+        height: 1080px;
+    }
+
+    
+    .right-aside-container {
+        width: 22%;
+    }
+
+}   
+/* 1920 */ 
+
+@media all and (min-width: 1537px) and (max-width: 1792px) {  /* avg - 1664 */
+    :root {
+        --witdhRatio: 7px;
+        --paddingNumDay: 6%;
+    }
+
+    * {
+        font-size: 13px;
+    }
+
+    .center-section-container {
+        height: 900px;
+
+        .user-statistics-block, .semesterMarksDiagram {
+            height: 35% !important;
+        }
+
+        .soon_birthdays, .last_marks, .class_chat {
+            height: 50% !important;
+        }
+
+    }
+
+    .right-aside-container {
+        width: 22%;
+    }
+} /* 1664 */ 
+
+@media all and (min-width: 1281px) and (max-width: 1536px) { /* avg - 1406 */
+    :root {
+        --witdhRatio: 5px;
+        --paddingNumDay: 3%;
+    }
+
+    * {
+        font-size: 11px;
+    }
+
+    .center-section-container {
+        height: 768px;   
+
+        .user-statistics-block, .semesterMarksDiagram {
+            height: 37% !important;
+        }
+
+       .soon_birthdays, .last_marks, .class_chat {
+           height: 55% !important;
+       }
+
+    }
+
+    .right-aside-container {
+        width: 22%;
+    }
+
+} /* 1406 */ 
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { /* avg - 1152 */ 
+    :root {
+        --witdhRatio: 1px;
+        --paddingNumDay: 0%;
+        --widthImageElements: 40px;
+    }
+
+    * {
+        font-size: 9px;
+    }
+
+  
+    .logo {
+        width: 70% !important;
+    }
+
+
+    .center-section-container {
+        height: 768px;   
+
+        .user-textInfo {
+            height: 70% !important;
+        
+        }
+        .user-statistics-block, .semesterMarksDiagram {
+            height: 33% !important;
+        }
+
+       .soon_birthdays, .last_marks, .class_chat {
+           height: 43% !important;
+       }
+
+    }
+
+    .right-aside-container {
+        width: 22%;
+    
+        div.numDay {
+            padding: 40% !important;
+        }
+
+        div.notes-count {
+            right: -7% !important;
+        }
+    }
+
+} /* 1152 */ 
+
+@media all and (min-width: 768px) and (max-width: 1023px) { /* avg - 896 */ 
+    * {
+        font-size: 9px;
+    }
+    
+    :root {
+        --witdhRatio: 2px;
+        --paddingNumDay: 0%;
+        --widthImageElements: 42px;
+    }
+
+// Left aside
+.left-aside {
+    width: 7% !important;
+    padding-top: 1%;
+
+    .nav-menu {
+        margin-top: 35% !important;
+        
+        .nav-item {
+            justify-content: center !important;
+            
+            &.active {
+                &::after {
+                    width: 23px !important;
+                    height: 130%;
+                    padding: 0px;
+                    right: -15px !important;
+                }
+            }
+
+            .nav-item-icon {
+                width: 35% !important;
+            }
+
+            .nav-link {
+                display: none !important;
+            }
+        }
+    }
+    .exit_btn {
+        .nav-item {
+            height: 100% !important;
+            justify-content: center !important;
+
+            .nav-item-icon {
+                width: 37% !important;
+            }
+
+            .nav-link {
+                display: none !important;
+            }
+        }
+    }
+
+    .logo {
+        .logo-title {
+            display: none !important;
+        }
+    }
+} 
+
+// Center section
+.center-section-container {
+    width: 66% !important; 
+    height: 1024px !important;
+    margin-left: 7% !important;
+
+    .center-section {
+        width: 93% !important;
+
+        header.header {
+            margin-top: 1% !important;
+            order: 0;
+
+            .headerElements {
+
+                .personalCabinet {
+                    .user-textInfo {
+                        height: 55%;
+                    }
+                }
+            }
+        }
+        & > div { 
+            margin-top: 3% !important;
+        } 
+        .visit-info-block {
+            height: 13% !important;
+            order: 1;
+
+            #image-cont {
+                height: 95%;
+            }
+            
+        }
+        .user-statistics-block, .class_chat {
+            width: 43% !important;
+            height: 25% !important;
+            order: 2;
+        }   
+
+        .class_chat {
+            order: 3;
+        }
+
+        .semesterMarksDiagram {
+            width: 100% !important;
+            height: 20% !important;
+            order: 4;
+        }
+        .soon_birthdays, .last_marks {
+            width: 43% !important;
+            height: 36% !important;
+        }
+
+        .soon_birthdays {
+            order: 5;
+        }
+        .last_marks {
+            order: 6;
+        }
+        
+    }
+}
+
+// Right aside
+.right-aside-container {
+    width: 27% !important;
+
+    .calendar-notes {
+        /* Change month */
+        .change-month-field {
+            width: 95% !important;
+
+            .change-month_btns {
+                width: 22% !important;
+            }
+        }
+
+        div.numDay {
+            padding: 40% !important;
+        }
+
+        div.notes-count {
+            right: -7% !important;
+        }
+    }
+    
+    .list-class-schedule {  
+        ul.enum-clss-schdl {
+            .text-item {
+                margin-left: 4% !important;
+            }
+        }
+    }
+
+    .dateNow {
+        padding: 2% !important;
+    }
+}
+   
+} /* 896 */
+
+@media all and (min-width: 320px) and (max-width: 767px)  { // 360
+    :root {
+        --witdhRatio: 5px;
+        --paddingNumDay: 0%;
+        --widthImageElements: 45px;
+    }
+    
+    * {
+        font-size: 9.8px;
+    }
+
+// Left aside
+    .left-aside { 
+        flex-direction: row !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 55px !important;
+        border-radius: 15px 15px 0px 0px !important;
+        z-index: 3;
+
+        .nav-menu {
+            height: 100% !important;
+            justify-content: center !important;
+            margin-top: 0% !important;
+
+            ul.nav {
+                flex-direction: row !important;
+
+                .nav-item {
+                    justify-content: center !important;
+                    flex-direction: column !important;
+                    height: 100% !important;
+
+                    &.active {
+                        border-radius: 20px !important;
+
+                        &::after {
+                            width: 0px !important;
+                        }
+                    }
+
+                    .nav-item-icon {
+                        width: 20% !important;
+                        margin-bottom: 4px !important;
+                    }
+
+                    .nav-link {
+                        width: 100% !important;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .exit_btn {
+            display: none !important;
+        }
+
+        .logo {
+            display: none !important;
+        }
+    } 
+
+// Center section
+    .center-section-container {
+        width: 100% !important; 
+        height: 480px;
+        margin: 0 !important;
+
+        .center-section {
+            width: 93% !important;
+
+            header.header {
+                margin-top: 1% !important;
+                order: 0;
+
+                .headerElements {
+                    width: 98% !important;
+                    flex-direction: row-reverse;
+
+                    .fontSizePage {
+                        display: none;
+                    }
+
+                    .header-buttons {
+                        width: 45%;
+                        margin: 0%;
+
+                        & > div {
+                            margin: 0;
+                            width: 10% !important;
+                        }
+
+                        & > .exit-icon {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            & > div { 
+                margin-top: 4% !important;
+            } 
+
+            & > div:not(div:nth-child(2)) {
+                .rollUp-block {
+                    display: flex !important;
+                    justify-content: center;
+                    margin-top: 1%;
+
+                }
+            }
+
+            .visit-info-block {
+                height: 28% !important; /* 30 */
+                order: 1;
+
+                #text-cont {
+                    margin-left: 4% !important;
+                    height: 79% !important;
+                    
+                    & > .welcome-user-text {
+                        font-size: calc(var(--common_fontSize) + 0.2rem) !important;
+                    }
+
+                    .go-btns {
+                        & > button {
+                            font-size: calc(var(--common_fontSize) - 0.25rem) !important;
+                            font-weight: 500 !important;
+                        }
+                    }
+                }
+
+                #image-cont {
+                    height: 95%;
+                }
+                
+            }
+            .user-statistics-block {
+                width: 100% !important;
+                height: 55% !important; /* 60 */
+                padding: 3% 7%  !important;
+                order: 2;
+
+                .user-photo {
+                    width: 60px !important;
+                    height: 60px !important;
+                  
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .user-name {
+                    font-size: calc(var(--common_fontSize) + 0.1rem) !important;
+                }
+    
+                .user-status {
+                    font-size: calc(var(--common_fontSize) - 0.1rem) !important;
+                }
+                
+                .user-educInstitute-title {
+                    width: 80% !important;
+                    .user-status;
+                }
+
+                .marks { 
+                    .mark {
+                        font-size: calc(var(--common_fontSize) + 0.2rem) !important;
+                    }
+                    .text {
+                        font-size: calc(var(--common_fontSize) - 0.15rem) !important;
+                    }
+                }
+            }   
+            
+            .semesterMarksDiagram, .soon_birthdays, .last_marks, .class_chat {
+                width: 100% !important;
+
+                li {
+                    margin: 1% auto !important;
+                    margin-bottom: 3% !important;
+
+                    & > span{
+                    }
+                }
+            }
+
+            .semesterMarksDiagram {
+                height: 40% !important; /* 40 */
+                order: 4;
+            }
+           
+
+            .soon_birthdays {
+                height: 78% !important; /* 100 */
+                order: 5;
+
+                .person-info_cont { 
+                    padding: 1% !important;
+                }
+            }
+            .last_marks {
+                height: 70% !important; /* 100 */
+                order: 6;
+            }
+            .class_chat {
+                height: 40% !important; /* 50 */
+                order: 3;
+            }
+        }
+    }
+
+// Right aside
+    .right-aside-container {
+        display: absolute !important;
+        right: 0 !important;
+        height: 90% !important;
+        width: 0;
+
+        .swipe-stick {
+            display: flex !important;
+        }
+
+        .calendar-notes {
+            /* Change month */
+            .change-month-field {
+                width: 93% !important;
+                .change-month_btns {
+                    width: 18% !important;
+                }
+            }
+
+            .calendar-field {
+                width: 100%;
+            }
+        }
+        
+        .list-class-schedule {  
+            .list-class-schedule {
+                width: 100%; 
+    
+                .header-sections {
+                    width: 92%;
+                    display: none;
+                }
+            }
+
+            ul.enum-clss-schdl {
+                .text-item {
+                    margin-left: 4% !important;
+                }
+            }
+        }
+
+        .list-notes-from-calendar {
+            width: 100%;
+
+            .header-sections {
+                width: 93%;
+            }
+        }
+    }
+ }
+
+@media all and (min-width: 480px) and (max-width: 767px) { /* avg - 606 */ 
+    .center-section-container {
+        height: 530px;
+    }
+}

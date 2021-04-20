@@ -1,0 +1,377 @@
+﻿@using NTPDateTime
+@using System.Globalization
+@using System.Threading
+@model LevelClever.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Реєстрація";
+}
+@* Registration page *@
+<link rel="stylesheet" href="~/assets/css/RegisterPage/forMobileV.css">
+<link rel="stylesheet" href="~/assets/css/RegisterPage/mediaRequres.css">
+<link rel="stylesheet" href="~/assets/css/RegisterPage/styles.css">
+<div id="ContentRegistrationPage">
+    <div class="block">
+        <div class="logoForMobileV">
+            <img src="~/assets/img/RegistrationPage/logo.svg">
+        </div>
+        <div class="timeline-wrapperForMobileV">
+            <div class="line"></div>
+            <div class="scrollRow">
+                <ul class="StepProgress">
+                    <li id="stP-it-1" class="StepProgress-item is-done">
+                        <div class="bold is-done">Хто ви?</div>
+                    </li>
+                    <li id="stP-it-2" class="StepProgress-item">
+                        <div class="bold">Персон. дані</div>
+                    </li>
+                    <li id="stP-it-3" class="StepProgress-item">
+                        <div class="bold">Фото</div>
+                    </li>
+                    <li id="stP-it-4" class="StepProgress-item">
+                        <div class="bold">Школа</div>
+                    </li>
+                    <li id="stP-it-5" class="StepProgress-item">
+                        <div class="bold">Перс. дані</div>
+                    </li>
+                    <li id="stP-it-6" class="StepProgress-item">
+                        <div class="bold">Від. про бат.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="side-left">
+            <div class="logo">
+                <img src="~/assets/img/RegistrationPage/logo.svg">
+            </div>
+            <div class="timeline-wrapper">
+                <div class="line"></div>
+                <ul class="StepProgress">
+                    <li id="stP-it-1" class="StepProgress-item is-done">
+                        <div class="bold is-done">Хто ви?</div>
+                    </li>
+                    <li id="stP-it-2" class="StepProgress-item">
+                        <div class="bold">Персональні дані</div>
+                    </li>
+                    <li id="stP-it-3" class="StepProgress-item">
+                        <div class="bold">Фото профілю</div>
+                    </li>
+                    <li id="stP-it-4" class="StepProgress-item">
+                        <div class="bold">Школа</div>
+                    </li>
+                    <li id="stP-it-5" class="StepProgress-item">
+                        <div class="bold">Персональні дані</div>
+                    </li>
+                    <li id="stP-it-6" class="StepProgress-item">
+                        <div class="bold">Відомості про батьків</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="side-right">
+            <form id="RegisterForm" method="post" asp-controller="Account" asp-action="Register" enctype="multipart/form-data">
+                <div id="step1" class="steps_frames">
+                    <div class="title">
+                        Xто ви?
+                    </div>
+                    <div class="subtitle">
+                        Оберіть свою роль
+                    </div>
+                    <div class="description">
+                        Суперинтересный текст о том, что эта штука нужна чтобы пользоваться нашим сайтом, а не то останешься холопом и пойдешь на завод отрабатывать пятидневочку с семи утра до шести вечера.
+                    </div>
+                    <div asp-validation-summary="ModelOnly"></div>
+                    <div class="roles">
+                        <div class="roles-blok">
+                            <div class="roles__img">
+                                <img src="~/assets/img/RegistrationPage/teacher 1.svg" alt="Вчитель">
+                            </div>
+                            <div class="roles__text">Вчитель</div>
+                            <input asp-for="Role" type="radio" value="teacher">
+                        </div>
+                        <div class="roles-blok">
+                            <div class="roles__img">
+                                <img src="~/assets/img/RegistrationPage/student 1.svg" alt="Учень">
+                            </div>
+                            <div class="roles__text">Учень</div>
+                            <input asp-for="Role" type="radio" value="student">
+                        </div>
+                        <div class="roles-blok">
+                            <div class="roles__img">
+                                <img src="~/assets/img/RegistrationPage/parents-icon.svg" alt="Батьки">
+                            </div>
+                            <div class="roles__text">Батьки</div>
+                            <input asp-for="Role" type="radio" value="parent">
+                        </div>
+                    </div>
+                    <span id="RoleValidation" asp-validation-for="Role"></span>
+                    <div class="next-step_btn" data-num="1" onclick="SwitchRole()">Далі</div>
+                </div>
+                <div id="step2" class="steps_frames">
+                    <div class="title">
+                        Персональні дані
+                    </div>
+                    <div class="subtitle">
+                        Заповніть дані про себе
+                    </div>
+                    <div class="morePersonData_form globalFormsContainer">
+                        <div class="emailMobilePhone_field form_fields">
+                            <div class="labelsEmailMobilePhone elementsRowForm">
+                                <label asp-for="Email">E-Mail</label>
+                                <label asp-for="PhoneNumber">Мобільний телефон</label>
+                            </div>
+                            <div class="emailInputsMobilePhoneEmail elementsRowForm">
+                                <input asp-for="Email" type="text" placeholder="Введіть свій e-mail..." />
+                                <span asp-validation-for="Email"></span>
+                                <input asp-for="PhoneNumber" class="phone" type="text">
+                                <span asp-validation-for="PhoneNumber"></span>
+                            </div>
+                        </div>
+                        <div class="password_field form_fields">
+                            <div class="labelsPassword elementsRowForm">
+                                <label asp-for="Password">Придумайте пароль</label>
+                                <label asp-for="PasswordConfirm">Введіть пароль ще раз</label>
+                            </div>
+
+                            <div class="inputsPassword elementsRowForm">
+                                <input asp-for="Password" type="password" placeholder="Введіть ваш новий пароль...">
+                                <span asp-validation-for="Password"></span>
+                                <input asp-for="PasswordConfirm" type="password" placeholder="Введіть ваш пароль ще раз...">
+                                <span asp-validation-for="PasswordConfirm"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-step_btn" data-num="1" onclick="Progress()">Далі</div>
+                </div>
+                <div id="step3" class="steps_frames">
+                    <div class="title">
+                        Фото профілю
+                    </div>
+                    <div class="subtitle">
+                        Додайте фото профілю
+                    </div>
+                    <div class="subtitle_1">
+                        Додайте власне фото:
+                    </div>
+                    <div class="loadPhotoIconContainer">
+                        <input asp-for="UploadedImage" class="loadPhoto_input" type=file id="loadPhoto_input" accept="image/*, image/jpeg, image/png">
+                        <label class="loadPhotoIcon" for=loadPhoto_input>
+                            <img src="~/assets/img/RegistrationPage/add_1.svg">
+                        </label>
+                    </div>
+                    <span asp-validation-for="UploadedImage"></span>
+                    <div class="subtitle_1">
+                        Або оберіть з наступних варіантів:
+                    </div>
+                    <section class="photoSelect">
+                        <div class="circle">
+                            <img src="~/assets/img/RegistrationPage/93_1.svg">
+                        </div>
+                        <div class="circle">
+                            <img src="~/assets/img/RegistrationPage/51_1.svg">
+                        </div>
+                        <div class="circle">
+                            <img src="~/assets/img/RegistrationPage/84_1.svg">
+                        </div>
+                        <div class="circle">
+                            <img src="~/assets/img/RegistrationPage/42_1.svg">
+                        </div>
+                        <div class="circle">
+                            <img src="~/assets/img/RegistrationPage/3_3.svg">
+                        </div>
+                        <div class="circle">
+                            <img src="~/assets/img/RegistrationPage/32_1.svg">
+                        </div>
+                        <div class="circle">
+                            <img src="~/assets/img/RegistrationPage/6_1.svg">
+                        </div>
+                        <div class="circle">
+                            <img src="~/assets/img/RegistrationPage/57_1.svg">
+                        </div>
+                        <div class="circle">
+                            <img src="~/assets/img/RegistrationPage/12_1.svg">
+                        </div>
+                    </section>
+                    <div class="next-step_btn" data-num="1" onclick="Progress()">Далі</div>
+                </div>
+                <div id="step4" class="steps_frames">
+                    @*<div class="title">
+                        Школа
+                    </div>
+                    <div class="subtitle">
+                        Де ви навчаєтесь?
+                    </div>
+                    <div class="studyPlace_form globalFormsContainer">
+                        <div class="regionCity_field form_fields">
+                            <div class="labelsRegionCity elementsRowForm">
+                                <label>Область</label>
+                                <label>Місто (село)</label>
+                            </div>
+                            <div class="selectsRegionCity elementsRowForm">
+                                <select name="region">
+                                    <option value="birth">Оберіть область...</option>
+                                    <option value="1">Київська</option>
+                                    <option value="2">Харківська</option>
+                                    <option value="3">Одеська</option>
+                                </select>
+                                <select name="city">
+                                    <option value="birth">Оберіть місто...</option>
+                                    <option value="1">Київ</option>
+                                    <option value="2">Харків</option>
+                                    <option value="3">Одеса</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="nameSchoolStEdYear_field form_fields">
+                            <div class="labelsNameSchoolStEdYear_field elementsRowForm">
+                                <label>Школа</label>
+                                <label>Рік вступу</label>
+                            </div>
+                            <div class="selectsNameSchoolStEdYear elementsRowForm">
+                                <select name="school">
+                                    <option value="birth">Оберіть школу...</option>
+                                    <option value="1">Школа 1</option>
+                                    <option value="2">Школа 2</option>
+                                    <option value="3">Школа 3</option>
+                                </select>
+                                <select name="year">
+                                    <option value="birth">Рік</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>*@
+                    <div class="next-step_btn" data-num="1" onclick="Progress()">Далі</div>
+                </div>
+                <div id="step5" class="steps_frames">
+                    @*<div class="title">
+                        Додаткові дані
+                    </div>
+                    <div class="subtitle">
+                        Заповніть додаткові відомості про себе
+                    </div>
+                    <div class="personData_form globalFormsContainer">
+                        <div class="surname_field form_fields">
+                            <label asp-for="Surname">Прізвище</label>
+                            <input asp-for="Surname" type="text" placeholder="Введіть ваше прізвище...">
+                            <span asp-validation-for="Surname"></span>
+                        </div>
+                        <div class="namePatronymic_field form_fields">
+                            <div class="labelsNamePatronymic elementsRowForm">
+                                <label asp-for="Name">Ім’я</label>
+                                <label asp-for="Midname">По батькові</label>
+                            </div>
+                            <div class="inputsNamePatronymic elementsRowForm">
+                                <input asp-for="Name" type="text" placeholder="Введіть ваше ім’я">
+                                <span asp-validation-for="Name"></span>
+                                <input asp-for="Midname" type="text" placeholder="Як Вас по батькові?...">
+                                <span asp-validation-for="Midname"></span>
+                            </div>
+                        </div>
+                        <div class="birthdayDate_field form_fields">
+                            <label>Дата народження</label>
+                            <div class="selectsForBirthdayDate">
+                                <select asp-for="Day">
+                                    <option disabled selected>День</option>
+                                    @for (int i = 1; i <= 31; i++)
+                                    {
+                                        <option value=@i>@i</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="Day"></span>
+                                <select asp-for="Month" class="month">
+                                    <option disabled selected>Місяць</option>
+                                    @{
+                                        CultureInfo culInf = new CultureInfo("uk-UA");
+                                        Thread.CurrentThread.CurrentCulture = culInf;
+                                        Thread.CurrentThread.CurrentUICulture = culInf;
+                                        for (int i = 0; i <= 11; i++)
+                                        {
+                                            <option value=@(i + 1)>@DateTimeFormatInfo.CurrentInfo.MonthNames[i]</option>
+                                        }
+                                    }
+                                </select>
+                                <span asp-validation-for="Month"></span>
+                                <select asp-for="Year">
+                                    <option disabled selected>Рік</option>
+                                    @{
+                                        int year = Network.Year;
+                                        for (int i = year; i >= year - 100; i--)
+                                        {
+                                            <option value=@i>@i</option>
+                                        }
+                                    }
+                                </select>
+                                <span asp-validation-for="Year"></span>
+                            </div>
+                        </div>
+                    </div>*@
+                    <div class="next-step_btn" data-num="1" onclick="Progress()">Далі</div>
+                </div>
+                <div id="step6" class="steps_frames">
+                    @*<div class="title">
+                        Відомості про батьків
+                    </div>
+                    <div class="subtitle">
+                        Заповніть відомості про батьків
+                    </div>
+                    <div class="infoAboutParents_form globalFormsContainer">
+                        <div class="mobilePhoneEmail_field form_fields">
+                            <div class="labelsMobilePhoneEmail elementsRowForm">
+                                <label>ПІБ матері</label>
+                                <label>Телефон матері</label>
+                            </div>
+                            <div class="inputsMobilePhoneEmail elementsRowForm">
+                                <input type="text" placeholder="Введіть ПІБ матері...">
+                                <input class="phone" type="text">
+                            </div>
+                        </div>
+                        <div class="parentsFullNameParentsMobilePhone_field form_fields">
+                            <div class="labelsParentsFullNameParentsMobilePhone elementsRowForm">
+                                <label>ПІБ батька</label>
+                                <label>Телефон батька</label>
+                            </div>
+                            <div class="inputsParentsFullNameParentsMobilePhone elementsRowForm">
+                                <input type="text" placeholder="Введіть ПІБ батька...">
+                                <input class="phone" type="text">
+                            </div>
+                        </div>
+                        <div class="homeAdress_field form_fields">
+                            <label>Домашня адреса</label>
+                            <input type="text" placeholder="Введіть домашню адресу..." name="homeAdress">
+                        </div>
+                    </div>*@
+                    <input type="submit" class="next-step_btn" data-num="1" onclick="Progress()">Завершити</input>
+                </div>
+                <div id="step7" class="steps_frames">
+                    <div class="title">
+                        Завершення
+                    </div>
+                    <div class="subtitle">
+                        Очікуйте підтвердження від вчителя
+                    </div>
+                    <div class="container-1">
+                        <div class="description">
+                            Суперинтересный текст о том, что ваши суперсекретные данные улетели в неизвестном направлении, и ими теперь могут пользоваться СБУ, ФБР и Фейсбук. Не забудьте поздравить пользователя с успешной регистрацией.
+                        </div>
+                        <div class="thankful">
+                            <img src="~/assets/img/RegisterPage/thankful.svg">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="~/assets/js/RegisterPage/script.js" asp-append-version="true"></script>
